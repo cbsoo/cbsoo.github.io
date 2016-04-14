@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script>
+
+        function wkwk(words) {
+            var return_words = [];
+            for (var i = 0; i < words.length; i++) {
+                if (words[i].startsWith('b') || words[i].startsWith('B'))
+                    return_words.push(words[i]);
+            }
+            return return_words;
+        }
+
+        function wkj(words, begin_char) {
+            var return_words = [];
+            for (var i = 0; i < words.length; i++) {
+                if (words[i].startsWith(begin_char.toUpperCase()) || words[i].startsWith(begin_char.toLowerCase()))
+                    return_words.push(words[i]);
+
+                return return_words;
+            }
+
+            var test = ['red', 'yellow', 'green', 'blue', 'Black'];
+            var ret = wkwk(test);
+            console.log(ret.join(','));
+            var ret2 = wkj(test, 'b');
+            console.log(ret2.join(','));
+
+    </script>
+</head>
+</html>
+
+</body>
+</html>
